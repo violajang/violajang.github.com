@@ -1,0 +1,120 @@
+/*layout*/
+#section01{background: url(../img/main_bg.jpg) no-repeat center center;background-size:cover;height:100vh}
+h2{display:none;}
+/*container*/
+.navcont{margin:0 15px;position: relative;height:100%}
+.container{width:1200px;margin:0 auto}
+.container h2{position: relative}
+.container h2 span{position: relative;z-index: 100;font-size:44px;color:#111517;font-family: 'Oswald', sans-serif}
+.container h2:before{z-index: 10;content: attr(data-num);font-family: 'Oswald', sans-serif;
+font-size:140px;color:#e7e7e7;position: absolute;left:0;right:0;bottom:0;top:-83px}
+
+/*row*/
+
+
+/*nav*/
+.nav{display:none;width:100%;height:80px;z-index: 500;position: fixed;background: transparent}
+.nav h1{position: absolute;left:0;top:18px;letter-spacing:-1px}
+.nav h1 a{font-size:26px;color:#fff;font-family: 'Montserrat'}
+.nav h1 span{color:#2bb3b4;font-weight:bold;margin-left:3px}
+.nav .menu{cursor:pointer;position: absolute;right:0;top:20px;padding:10px 0 10px 10px}
+.nav .menu:hover .menubar{background:#2bb3b4;transition:all 0.2s}
+.nav .menu span{display:block;width:32px;height:3px;background: #fff;margin-bottom:5px}
+.nav .menu span.nm{margin-bottom:0}
+
+.nmInner .menu .rotate .left45{transform:rotate(45deg)}
+.nmInner .menu .rotate .right45{transform:rotate(-45deg)}
+
+
+/*section01*/
+#section01 .section01-bg{position:absolute;left:0;top:0;width:100%;height:100vh;background: rgba(0,0,0,0.5);
+z-index:100}
+
+.sec01{width:100%;height:100%;z-index:400;position: relative;visibility: visible}
+.sec01 .left, .sec01 .right{height:100%;height:100vh}
+.sec01 .left{width:50%;float:left}
+.sec01 .right{width:50%;float:right;text-align:left;position:relative;top:50%}
+.sec01 .right .rightWrap{position: absolute;left:0;top:50%;transform:translate3d(0,-50%,0)}
+
+.sec01 .right h1{font-weight:400;font-size:65px;color:#fff;font-family: 'Oswald';line-height:64px}
+.sec01 .right span.bar{display:block;width:40px;height:4px;background: #2bb3b4;margin:30px 0}
+.sec01 .right p{font-size:16px;color:#fff;font-family:'Roboto';font-weight:100;line-height:20px}
+
+/*section01 menu*/
+.nmInner{visibility:hidden;opacity:1;background: #000;width:100%;margin:0;z-index:200;
+position:absolute;top:0;left:0;bottom:0;right:0;height:100vh}
+.nmInner .container{height:100%}
+.nmInner .innerList{position:relative;top:50%;left:60%;transform: translate3d(0,-50%,0)}
+.nmInner .innerList ul li:last-child a{color:#2bb3b4}
+.nmInner ul li{line-height: 50px}
+.nmInner ul li a{font-family:'Oswald';font-size:50px;color:#fff}
+.nmInner ul li a:hover{color:#2bb3b4;transition:all 0.4s}
+.nmInner ul.smallMenu{margin-top:30px}
+.nmInner ul.smallMenu li{display: inline-block}
+.nmInner ul.smallMenu li a{display: block;font-size:0;width:30px}
+
+/*section02*/
+#section02{text-align:center;height:100vh;padding-top:150px;padding-bottom:150px}
+#section02 h2{opacity: 0;transition: all 0.5s cubic-bezier(0.26, 0.85, 1, 1); 
+		}
+#section02 h2.show{opacity:1; transform: translateY(0px);
+		animation-name:fadeInDown;
+		animation-duration: 0.5s;
+		animation-iteration-count:1;
+		animation-timing-function: ease-in;
+	}
+
+
+.skills ul{margin:150px 0;font-family: 'Montserrat'}
+.skills ul li{display: inline-block; padding:0 50px;border-right:1px solid #ccc}
+.skills ul li.skill span{font-size:110px;font-family: 'Oswald', sans-serif;letter-spacing: -5px}
+.skills ul li.etc{border-right:0}
+.skills ul li p.subjec{font-size:15px}
+
+.about{text-align:center}
+.about p{font-size:22px;line-height:27px}
+.about p.marginT{margin-top:25px}
+.about a.moreAbout{display:block;font-family: 'Oswald', sans-serif;
+font-size:16px;background:#2bb3b4;width:200px;height:50px;line-height:50px;margin:0 auto;
+border-radius:2px}
+
+
+
+/*section03*/
+#section03{text-align:center;padding-top:150px;padding-bottom:150px;background: #f5f5f5;z-index: 5}
+
+.portfolio{margin:150px 0}
+.port{width:28%;display: inline-block;height:510px;padding:20px}
+.port1{background:yellow}
+.port2{background:pink}
+.port3{background:violet}
+.port1, .port2{margin-right:2%}
+
+.port h3{font-size:30px;font-family: 'Oswald', sans-serif;text-align:left}
+
+
+
+@media (max-width:1280px){
+	.container{width:100%}
+	.row{padding: 0 15px}
+}
+
+@media (max-width:960px){
+	.sec01 .left{display: none}
+	.sec01 .right h1{font-size:60px;font-weight:700}
+}
+
+@media (max-width:768px){	
+	.sec01 .right h1{font-size:45px;line-height: 45px}
+	.sec01 .right p{font-size:14px}
+	.port{margin-right:0}
+	.sec01 .right{float:none;width:100%}
+	.sec01 .rightWrap{margin:0 auto;width:100%}
+	.portfolio{overflow: hidden}
+	.port{width:100%;margin-bottom:2%;padding-right:0}
+
+	.nmInner .innerList{left:5%;top:50%;}
+	.nmInner ul li a{font-size:35px;line-height: 35px}
+
+}
+

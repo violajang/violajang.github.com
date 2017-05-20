@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* Common */ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,legend,textarea,p,th,td,input,select,textarea,button {
+    margin:0;
+    padding:0
+}
+html,body {
+}
+body {
+    font-family:'맑은 고딕',dotum,tahoma,sans-serif;
+    font-size:12px;
+    line-height:1.5;
+    color:#000
+}
+fieldset,img {
+    border:0 none
+}
+dl,ul,ol,menu,li {
+    list-style:none
+}
+button {
+    overflow:visible;
+    border:0 none;
+    background-color:transparent;
+    cursor:pointer
+}
+button::-moz-focus-inner{
+    padding:0;
+    border:0
+}
+address,caption,em {
+    font-style:normal
+}
+a {
+    color:#000;
+    text-decoration:none
+}
+a:focus,a:active,a:hover {
+    color:#000;
+    text-decoration:none
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+hr {
+    display:none
+}
+h2,h3,h4 {
+    /*font-family:'arial';*/
+    font-weight: bold
+}
+
+/*common*/
+#wrap{font-family: 'nanumgothic';min-width:980px}
+#wrap .top_gnb_wrap{background: #334555;width:100%}
+#wrap .top_gnb{margin:0 auto; width:980px;border-bottom:1px solid #243442;position: relative;height:38px}
+#wrap .top_gnb h1{position:absolute;left:0;top:0}
+button.mb_btn{display: none}
+.top_gnb ul.top_gnb_right{float:right;border-left:1px solid #495967;border-right:1px solid #243442;height:38px;position:absolute;top:0;right:0;overflow:hidden}
+.top_gnb ul.top_gnb_right li{float:left;border-left:1px solid #243442;border-right:1px solid #495967;width:63px; height:100%;text-align:center;overflow:hidden}
+.top_gnb ul.top_gnb_right li a{display:block;padding:10px;text-align:center}
+.top_gnb ul.top_gnb_right li a span{display:inline-block;color:#fff;background: url(../images/gnb_list.png) no-repeat;font-size:0;overflow:hidden;height:12px}
+.top_gnb ul.top_gnb_right li.gnb_01 a span{width:32px}
+.top_gnb ul.top_gnb_right li.gnb_02 a span{background-position: 0 -16px;width:33px}
+.top_gnb ul.top_gnb_right li.gnb_03 a span{background-position: 0 -31px;width:20px}
+.top_gnb ul.top_gnb_right li.gnb_04 a span{background-position: 0 -45px;width:13px}
+.top_gnb ul.top_gnb_right li.gnb_05 a span{background-position: 0 -59px;width:29px}
+.top_gnb ul.top_gnb_right li.gnb_06 a span{background-position: 0 -74px; width:39px}
+.top_gnb ul.top_gnb_right li.gnb_07 a span{background-position: 0 -89px; width:41px}
+
+.main_contents{background:url(../images/main_bg.jpg) no-repeat 50% 0}
+.main_left_wrap{width:982px;margin:0 auto;clear:both;overflow: hidden;position:relative;/*background:url(../images/bg.gif) repeat-y 0 0*/}
+.main_left_gnb{width:204px;/*height:1023px;*/background:#fff; border-left:1px solid #ddd; border-right:1px solid #ddd;float:left}
+.main_left_gnb:before {position:absolute;left:0;top:0;bottom:0;width:204px;border-left:1px solid #ddd; border-right:1px solid #ddd;content:'';display:block}
+.main_left_gnb h2{width:204px; height:120px;position: relative}
+.main_left_gnb h2 a{width:119px; height:37px; position: absolute;bottom:25px;left:42px}
+.main_left_gnb ul{border-top:1px solid #ddd;position: relative}
+.main_left_gnb ul li{border-bottom:1px solid #ddd}
+.main_left_gnb ul li a{font-weight: bold; font-family: 'nanumgothic'; font-size:15px; color:#4b4b4b;vertical-align:middle;line-height: 50px;margin-left:15px;position:relative}
+.main_left_gnb > ul > li > a {display:block}
+.main_left_gnb > ul > li.active > a:after{position:absolute;top:50%;margin-top:-5px;width:8px;height:10px;content:'';background:url('../images/blt_nav.png') no-repeat 0 0;display:block;right:-8px}
+.main_left_gnb ul li a:hover{color:#ed0000}
+
+.main_info{float:right;padding-bottom:40px}
+
+.main_rolling{width:776px;height:486px;position: relative}
+.main_rolling ul.main_images{width:1552px;height:486px;overflow: hidden}
+.main_rolling ul.main_images li{float:left}
+
+.bx-start, .bx-stop{text-indent: -999px;font-size: 0}
+.bx-start{display: none}
+
+.info_top, .info_bottom{margin-left:35px;overflow: hidden;clear:both;width:740px}
+.info_top .techno_clip{width:384px;position: relative;float:left}
+.info_top .techno_clip h3{font-size:19px;color:#222}
+.info_top .techno_clip ul.notice_list{margin-top:30px}
+.info_top .techno_clip ul.notice_list li{margin-bottom:10px}
+.info_top .techno_clip ul.notice_list li a{color:#666;font-size:14px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}
+.info_top .techno_clip ul.notice_list li span.date{color:#747474;font-size:14px;float:right}
+.info_top .techno_clip p.more_btn{position: absolute;top:10px;right:0}
+
+.info_top .info_right{float:right}
+.info_top .info_right ul li{border:1px solid #ddd;width:310px;height:100px}
+.info_top .info_right ul li.digital_tv_info{margin-top:10px}
+.info_top .info_right ul li a{position: relative;display: block;padding:37px 20px}
+.info_top .info_right ul li a span{color:#333;font-size:18px;font-weight:bold}
+.info_top .info_right ul li a:after{content:'';position: absolute;background: url(../images/main_bottom_icons.png) no-repeat center right;top:20px;right:30px}
+.info_top .info_right ul li.dtv_info a:after{background-position:0 10px;width:37px;height:66px;top:15px}
+.info_top .info_right ul li.digital_tv_info a:after{background-position: -48px 0;height:55px;width:45px}
+
+.info_bottom{margin-top:30px}
+.info_bottom ul{font-weight:bold;text-align:center;height:99px}
+.info_bottom h3{width:92px;float:left;height:100px;background:#f3f3f3;text-align:center}
+.info_bottom h3 span{display:block;font-size:19px;color:#333;margin-top:35px}
+.info_bottom .research h3 span{margin-top:25px; padding:0 20px}
+.info_bottom ul li{float:left;border-bottom:1px solid #e3e3e3;width:92px}
+.info_bottom ul li a{display: block;font-size:15px;position: relative;height:79px;margin:10px 0;border-right:1px solid #e3e3e3}
+.info_bottom .produce{margin-bottom:18px}
+.info_bottom .produce li a:after{content:'';clear:both;overflow:hidden;width:50px;height:48px;background:url(../images/main_bottom_icons.png) no-repeat center bottom;position:absolute;bottom:5px;left:23px}
+.info_bottom .produce li.pro01 a:after{background-position: 3px -73px}
+.info_bottom .produce li.pro02 a:after{background-position: -52px -73px}
+.info_bottom .produce li.pro03 a:after{background-position: -104px -73px}
+.info_bottom .produce li.pro04 a:after{background-position: -162px -73px}
+.info_bottom .produce li.pro05 a:after{background-position: -221px -73px}
+.info_bottom .produce li.pro06 a:after{background-position: -271px -73px}
+.info_bottom .produce li.pro07 a:after{background-position: -322px -73px}
+
+.info_bottom .transmisson{float:left;width:60%}
+.info_bottom .research{float:left;width:40%}
+
+.info_bottom .transmisson li{width:176px;text-align:left}
+.info_bottom .transmisson li a,.info_bottom .research li a{/*margin-left:40px;*/line-height:80px;text-align:center}
+.info_bottom .transmisson li.pro02 a{border-right:0}
+.info_bottom .transmisson li a:after{content:'';clear:both;overflow:hidden;width:50px;height:50px;margin-left:34px;vertical-align:middle;background:url(../images/main_bottom_icons.png) no-repeat center bottom;display:inline-block;position:relative;top:5px;/*position:absolute;bottom:5px;right:40px*/}
+.info_bottom .transmisson li.pro01 a:after{background-position: 0 -142px}
+.info_bottom .transmisson li.pro02 a:after{background-position: -56px -142px;/*right:25px*/}
+
+.info_bottom .research li.pro01{width:200px;border-right:none}
+.info_bottom .research li a:after{content:'';clear:both;overflow:hidden;width:50px;height:50px;margin-left:34px;background:url(../images/main_bottom_icons.png) no-repeat center bottom;vertical-align:middle;display:inline-block;position:relative;top:5px;/*position:absolute;bottom:5px;right:40px*/}
+.info_bottom .research li.pro01 a:after{background-position: -111px -138px}
+
+.footer_wrap{border-top:2px solid #334555}
+.footer{height:50px;border-bottom:1px solid #eee}
+.footer .company_list,.foot_logo{width:980px;margin:0 auto} 
+.footer .company_list ul{border-left:1px solid #eee;overflow:hidden;clear:both}
+.footer .company_list ul li{width:488px;float:left;border-right:1px solid #eee;}
+.footer .company_list ul li a{color:#333;font-size:12px;display: block;padding:16px 0 16px 20px;position:relative}
+.footer .company_list ul li a:after{content:'';background:url(../images/footer_arrow.png) no-repeat 50% 50%;
+display: inline-block;width:54px;height:50px;position:absolute;right:0;top:0;border-left:1px solid #eee}
+
+.foot_logo{height:84px}
+.foot_logo ul li{float:left}
+.foot_logo .mbc_logo{float:left;margin-top:30px}
+.foot_logo .mbc_logo a {margin-right:10px}
+
+.foot_logo ul.mbc_sns{float:right;margin-top:27px}
+.foot_logo ul.mbc_logo li{margin-right:20px}
+.foot_logo ul.mbc_logo li.copyright{margin-right:0}
+.foot_logo ul.mbc_sns li{margin-right:10px}
+.foot_logo ul.mbc_sns li.sns04{margin-right:0}
+
+@media all and (max-width:767px) {
+
+#wrap{min-width:auto}
+#wrap .top_gnb{width:auto;height:auto}
+#wrap .top_gnb h1{position: static; padding:8px 0 10px 10px}
+.top_gnb ul.top_gnb_right{float:none;position: static;height:auto;border-left:none;border-right:none;background: #fff}
+.top_gnb ul.top_gnb_right li{width:50%;box-sizing: border-box;border-bottom:1px solid #243442}
+.top_gnb ul.top_gnb_right li a span{background: none;font-size:14px;width:auto;height:auto; color:#243442;font-weight:bold}
+.top_gnb ul.top_gnb_right li a{padding:7px}
+.top_gnb ul.top_gnb_right li.gnb_01 a span,.top_gnb ul.top_gnb_right li.gnb_03 a span, .top_gnb ul.top_gnb_right li.gnb_04 a span,.top_gnb ul.top_gnb_right li.gnb_05 a span,.top_gnb ul.top_gnb_right li.gnb_06 a span{width:auto}
+.top_gnb ul.top_gnb_right li:nth-child(2n+2){border-right:none}
+.top_gnb ul.top_gnb_right li:nth-child(1n+1){border-left:none}
+.top_gnb ul.top_gnb_right li:last-child{border-bottom:none}
+
+.bx-default-pager, .bx-controls-auto{display: none}
+.main_left_wrap{width:auto}
+.main_left_gnb{float:none}
+.main_info{float:none;width:auto}
+.main_rolling{width:auto;height:auto}
+.main_rolling ul.main_images{width:auto;height:100%}
+.main_rolling ul.main_images li a{display: block}
+.main_rolling ul.main_images li a img{width:100%;height:100%}
+.main_rolling .main_roll_btn{display: none}
+.info_top, .info_bottom{width:auto;margin:0;padding:15px}
+.info_top .techno_clip{width:100%;float:none}
+.info_top .info_right{width:100%;float:none;margin-top:30px}
+
+.info_top .info_right ul li{width:auto;height:auto}
+
+.main_left_gnb{width:auto;height:auto;border:none}
+.main_left_gnb:before{display: none}
+
+.main_left_gnb h2{width:auto;height:auto;position: static;margin-left:15px}
+.main_left_gnb h2 a{width:auto;height:auto;position:static}
+.main_left_gnb ul{}
+
+.info_bottom .produce,.info_bottom .transmisson,.info_bottom .research{width:100%}
+
+.footer .company_list, .foot_logo{width:auto}
+.footer .company_list ul li{width:50%;box-sizing: border-box}
+
+ul.mbc_sns li a img{width:100%;height:100%}
+.main_left_gnb ul li a:hover{color:#4b4b4b}
+
+button.mb_btn{display: block;position:absolute;top:11px;right:10px}
+
+.main_contents {background:none}
+.main_rolling {background:url(../images/main_bg.jpg) no-repeat 50% 0;background-size:cover}
+.info_bottom h3 {float:none;height:auto;width:auto;padding:8px 0;margin-top:10px}
+.info_bottom h3 span {margin-top:0}
+.info_bottom .research h3 span {margin:0;}
+.info_bottom ul {height:auto}
+.info_bottom ul li {float:none;width:auto;height:auto}
+.info_bottom .transmisson li, .info_bottom .research li.pro01 {width:auto}
+.info_bottom ul li a {border-right:none;height:40px !important;line-height:40px !important;text-align:left !important;padding-left:85px !important}
+.info_bottom .produce li a:after {bottom:auto;top:50%;margin-top:-24px}
+.info_bottom .transmisson li a:after {left:23px;top:50%;margin:-17px 0 0 0;position:absolute}
+.info_bottom .research li a:after{left:23px;top:50%;margin:-21px 0 0 0;position:absolute}
+
+span.copyright{display: block;margin-top:5px}
+
+.main_rolling .bx-has-controls-auto{display: none}
+}
+
+.main_rolling .bx-has-controls-auto {position:absolute;bottom:65px;left:40px;right:0}
+.main_rolling .bx-wrapper .bx-pager {display:inline-block;vertical-align:middle }
+.main_rolling .bx-pager-item {float:left}
+.main_rolling .bx-pager-link{background: url(../images/main_paging.png) no-repeat;display: inline-block;background-position: -43px -3px;width:14px;height:14px;vertical-align:middle;margin-right:7px;text-align:center;font-size:0;text-indent:-999px}
+.main_rolling .bx-pager-link .active{background-position: 0 -3px; width:34px;height:14px}
+.main_rolling .main_roll_btn ul li.play_btn{margin-right:0}
+.main_rolling .bx-controls-auto{display:inline-block;background: url(../images/main_paging.png) no-repeat;width:21px;height:21px; background-position: -67px 0}

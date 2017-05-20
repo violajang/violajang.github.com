@@ -1,0 +1,126 @@
+/* layout */
+body{font-family:"verdana";  }
+a, a:hover, a:visited, a:focus{text-decoration:none; color:black;}
+#wrap{width:100%; height:100%;}
+
+
+/* header */
+#header{ width:100%;  position:relative; }
+#header h1 {position:static;margin:0 auto; width:50%; text-align:center;}
+#header h1 img{width:100%; height:auto;}
+
+#header .gnbWrap{display:none;}
+
+#header .MgnbWrap{display:block;  width:100%;}
+#header .MgnbWrap .m_gnb_btn{margin-top:-50px; width:50%;}
+
+#header .MgnbWrap .Mgnb{display:none}
+#header .MgnbWrap.on .Mgnb{display:block;  position:fixed; left:0; top:0; width:80%; height:100%; background-color:rgba(0,0,0,0.5);}
+#header .MgnbWrap.on .m_gnb_btn{display:none;}
+#header .MgnbWrap ul.Mgnb{width:auto; height:auto}
+#header .MgnbWrap ul.Mgnb li{padding:5px 10px; height:25px; border-bottom:1px dashed #ccc;}
+#header .MgnbWrap ul.Mgnb li a{}
+#header .MgnbWrap ul.Mgnb li:nth-child(1) a:hover,
+#header .MgnbWrap ul.Mgnb li:nth-child(1) a:focus{color:#c3106d; font-weight:bold;}
+#header .MgnbWrap ul.Mgnb li:nth-child(2) a:hover,
+#header .MgnbWrap ul.Mgnb li:nth-child(2) a:focus{color:#34a6c6; font-weight:bold;}
+#header .MgnbWrap ul.Mgnb li:nth-child(3) a:hover,
+#header .MgnbWrap ul.Mgnb li:nth-child(3) a:focus{color:#ff7e00; font-weight:bold;}
+#header .MgnbWrap ul.Mgnb li:nth-child(4) a:hover,
+#header .MgnbWrap ul.Mgnb li:nth-child(4) a:focus{color:#39c422; font-weight:bold;}
+#header .MgnbWrap ul.Mgnb li:nth-child(5) a:hover,
+#header .MgnbWrap ul.Mgnb li:nth-child(5) a:focus{color:#6174ff; font-weight:bold;}
+/* visual */
+
+#visual{width:100%; height:100%; overflow:hidden; position:relative;}
+#visual .visualPhotos ul{width:500%; height:20%; overflow:hidden; }
+#visual .visualPhotos li{float:left; width:20%;}
+#visual .visualPhotos li img{width:100%;}
+#visual .visualPhotos li a{display:block; height:20%;}
+
+#visual .visualFoot{height:auto; width:100%;}
+#visual .visualFoot p{text-align:center; font-weight:bold; font-size:100%; font-family:"Georgia"; 
+background:url(../images/visual_gray_row.png) no-repeat 0 100%; padding:10px;}
+
+#visual .photosBtn{ width:100%; height:auto;}
+#visual .photosBtn a{position:absolute; height:auto; top:28%;}
+#visual .photosBtn a img{width:100%;}
+#visual .photosBtn a.pre{width:10%}
+#visual .photosBtn a.nex{right:0;  width:10%}
+
+#visual .photosDots{display:none}
+
+/* contents */
+#contents{width:100%; height:auto}
+#contents h2{font-family:"Georgia"; font-size:20px; color:#11719e; }
+#contents .sub{font-size:12px; color:#4e4e4e; }
+#contents h3{font-family:"Georgia"; font-size:20px; color:#444444;}
+#contents .socialConect h3{background:url(../images/visual_gray_row.png) no-repeat left top;  padding-top:30px;}
+#contents p{font-size:11pt; font-family:"Myriad Pro"; color:#444444;}
+#contents .morebutton{background:url(../images/gray_button.png) no-repeat;}
+#contents .bluebutton{background:url(../images/blue_btn.png) no-repeat; width:163px; height:32px;  border:none;
+	font-family:"Georgia"; color:white; text-align:left; display:block; margin-bottom:5px;}
+#contents .content{width:100%;height:auto; margin:20px 0 10px 5px; }
+#contents .content .con{width:100%; float:left; height:auto}
+
+#contents .content .morebutton{width:48px; height:23px;}
+#contents .content .morebutton a{padding-left:8px; color:#016999; font-size:12px; font-family:"Myriad Pro"; }
+
+#contents .conFoot .socialConect ul li{float:left;}
+
+#contents .conFoot .Mcontact{display:none;}
+
+#contents  .con p{padding-bottom:15px; }
+#contents  .con .img{width:95%;}
+#contents  .con .img img{width:100%; height:auto;  border:5px solid #ccc; border-radius:10px}/*부모의 너비에따라 조정되는 크기*/
+
+#contents .content .con h2{margin-left:5px;}
+#contents .conFoot .con h3, h4{margin-left:5px; border-bottom:1px dashed #ccc; padding-bottom:5px;}
+
+#contents .content .con{position:relative; margin-bottom:10px;}
+#contents .content .con .morebutton{position:absolute; top:8px; right:20px;}
+
+#contents .conFoot{width:100%; height:auto; overflow:hidden; margin-left:5px;}
+
+#contents .conFoot .socialConect{width:100%; height:auto; overflow:hidden;}
+#contents .conFoot .socialConect p{font-size:13px; padding-top:5px; padding-bottom:10px;}
+
+#contents .conFoot .socialConect ul{margin-bottom:20px; width:100%; height:100%; overflow:hidden;}
+#contents .conFoot .socialConect img{width:100%; height:auto;}
+
+#contents .conFoot .newsLetter{clear:both}
+#contents .conFoot .newsLetter h4{font-family:"Gill Sans MT"; font-size:14pt; font-weight:bold; clear:both}
+#contents .conFoot input{width:70%; height:30%; border-radius:5px; border:1px solid #ccc; 
+	margin-bottom:5px; padding-left:10px; font-family:"verdana"; font-size:100%; margin-bottom:10px;}
+#contents .conFoot textarea{border-radius:5px; border:1px solid #ccc; 
+	margin-bottom:5px; padding-left:10px; font-family:"verdana"; font-size:100%; margin-bottom:10px;
+	width:70%; height:14em;
+	}
+#contents .contact h3{margin:15px 0;}
+
+#contents .newsUpdate{margin-top:20px; width:80%; height:auto; position:relative}
+
+#contents .newsUpdate .Update1{width:100%; height:auto; border-bottom:1px dashed #ccc; 
+padding:10px; overflow:hidden;}
+#contents .newsUpdate .Update1 .upd1{float:left; margin-right:10px;}
+#contents .newsUpdate .Update1 p{width:70%; font-size:0.688em;  padding:0; margin:0; float:left; }
+
+#contents .newsUpdate .Update2{width:100%; height:auto; border-bottom:1px dashed #ccc; padding:10px;
+overflow:hidden;}
+#contents .newsUpdate .Update2 .upd2{margin-right:10px; float:left; }
+#contents .newsUpdate .Update2 p{font-size:0.688em;  width:70%; padding:0; margin:0; float:left; }
+
+#contents .newsUpdate .Update3{width:100%; height:auto; padding:10px; overflow:hidden;}
+#contents .newsUpdate .Update3 .upd3{margin-right:10px; float:left; }
+#contents .newsUpdate .Update3 p{font-size:0.688em; width:70%; padding:0; margin:0; float:left; }
+
+#contents .newsUpdate .bluebutton{float:left; margin-bottom:20px;}
+
+/* footer */
+#footer{height:100%; background-color:#333333; border-top:5px solid #4c4c4c; padding-left:5px;}
+#footer .footerInner{width:100%; height:auto; padding-top:10px;}
+#footer .footerInner .footInfo{width:100%;float:left; font-family:"Myriad Pro"; font-size:11px; color:#929292;
+line-height:20px;}
+#footer .footerInner .footInfo a{color:#929292;}
+#footer .footerInner .footInfo a:hover{text-decoration:underline}
+#footer .footerInner .copyright{font-family:"Myriad Pro"; font-size:11px; color:#929292; line-height:20px;}

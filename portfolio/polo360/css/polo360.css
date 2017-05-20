@@ -1,0 +1,114 @@
+/* layout */
+body{font-family:"verdana";  }
+a, a:hover, a:visited, a:focus{text-decoration:none; color:black;}
+#wrap{width:100%; height:100%; background:url(../images/polo_bg.jpg) repeat-x 0 0;}
+
+/* header */
+#header{margin:0 auto; width:940px;  position:relative;}
+#header h1 {position:absolute; left:0; }
+
+
+#header .gnbWrap{display:block; padding-top:60px; margin-left:420px; width:450px; height:50px;}
+#header .gnbWrap ul.gnb{width:600px; height:50px;}
+#header .gnbWrap ul.gnb li{border-left:1px dashed #ccc; height:35px; float:left;}
+
+#header .gnbWrap ul.gnb li a{margin-left:6px; margin-right:6px; display:block; height:0px; 
+padding-top:50px;}
+#header .gnbWrap ul.gnb li.gnb1 a{width:72px; background:url(../images/gnb_1.png) no-repeat; }
+#header .gnbWrap ul.gnb li.gnb2 a{width:113px; background:url(../images/gnb_2.png) no-repeat; }
+#header .gnbWrap ul.gnb li.gnb3 a{width:81px; background:url(../images/gnb_3.png) no-repeat; }
+#header .gnbWrap ul.gnb li.gnb4 a{width:97px; background:url(../images/gnb_4.png) no-repeat; }
+#header .gnbWrap ul.gnb li.gnb5 a{width:90px; background:url(../images/gnb_5.png) no-repeat; }
+
+#header .gnbWrap ul.gnb li.gnb1 a:hover{background:url(../images/gnb_1_over.png) no-repeat;}
+#header .gnbWrap ul.gnb li.gnb2 a:hover{background:url(../images/gnb_2_over.png) no-repeat;}
+#header .gnbWrap ul.gnb li.gnb3 a:hover{background:url(../images/gnb_3_over.png) no-repeat;}
+#header .gnbWrap ul.gnb li.gnb4 a:hover{background:url(../images/gnb_4_over.png) no-repeat;}
+#header .gnbWrap ul.gnb li.gnb5 a:hover{background:url(../images/gnb_5_over.png) no-repeat;}
+
+#header .MgnbWrap{display:none;}
+
+/* visual */
+#visual{padding-top:50px; margin:0 auto; width:940px; overflow:hidden; position:relative; }
+#visual .visualPhotos ul{width:4700px; overflow:hidden;}
+#visual .visualPhotos li{float:left; width:940px;}
+
+#visual .visualFoot{height:52px; padding-top:10px;}
+#visual .visualFoot p{text-align:center; font-weight:bold; font-size:22px; font-family:"Georgia";
+background:url(../images/visual_gray_row.png) no-repeat 0 100%; height:50px;}
+
+#visual .photosBtn{position:absolute; top:180px; width:940px;}
+#visual .photosBtn a{display:block; position:absolute; }
+#visual .photosBtn a.nex{right:0}
+
+#visual .photosDots{width:100px; height:17px; position:absolute; left:20px; bottom:80px;}
+#visual .photosDots ul li a{background:url(../images/photodot.png) no-repeat;
+	width:17px; height:17px; display:block; float:left; margin-right:3px; text-indent:-9999px;}
+#visual .photosDots ul li.on a{background:url(../images/photodot_over.png) no-repeat; }
+
+/* contents */
+#contents{width:940px; margin:0 auto;}
+#contents h2{font-family:"Georgia"; font-size:20px; color:#11719e; }
+#contents .sub{font-size:12px; color:#4e4e4e; }
+#contents h3{font-family:"Georgia"; font-size:20px; color:#444444;}
+#contents p{font-size:11pt; font-family:"Myriad Pro"; color:#444444;}
+#contents .morebutton{background:url(../images/gray_button.png) no-repeat;}
+#contents .bluebutton{background:url(../images/blue_btn.png) no-repeat; width:163px; height:32px;  border:none;
+	font-family:"Georgia"; color:white; text-align:left; }
+#contents .content{width:100%;height:420px; margin:20px 0 0 5px; }
+#contents .content .con{width:30%; float:left; padding-right:30px; height:420px}
+#contents .conFoot{width:100%; height:350px;}
+#contents .conFoot .socialConect, .contact, .newsUpdate{width:30%; height:350px; float:left; margin-right:30px; }
+#contents .conFoot .socialConect ul li{float:left;}
+#contents .conFoot .Mcontact{display:none;}
+
+#contents  .con p{padding-bottom:15px; margin-left:5px;}
+#contents  .con .img{width:100%;}
+#contents  .con .img img{width:100%; height:auto; border:5px solid #ccc; border-radius:10px;}/*부모의 너비에따라 조정되는 크기*/
+
+#contents .content .con h2{margin-left:5px;}
+#contents .conFoot .con h3, h4{margin-left:5px; border-bottom:1px dashed #ccc; padding-bottom:5px;}
+
+#contents .content .morebutton{width:48px; height:23px;}
+#contents .content .morebutton a{padding-left:8px; color:#016999; font-size:12px; font-family:"Myriad Pro"; }
+
+#contents .content .con{position:relative}
+#contents .content .con .morebutton{position:absolute; top:8px; right:20px;}
+
+#contents .conFoot{margin:30px 0 30px 5px}
+#contents .conFoot .socialConect p{font-size:13px; padding-top:5px; padding-bottom:10px;}
+#contents .conFoot .socialConect ul li{margin-bottom:30px}
+
+#contents .conFoot .newsLetter h4{font-family:"Gill Sans MT"; font-size:14pt; font-weight:bold; }
+#contents .conFoot input{width:270px; height:30px; border-radius:5px; border:1px solid #ccc; 
+	margin-bottom:5px; padding-left:10px; font-family:"verdana"; font-size:9px; margin-bottom:10px;}
+#contents .conFoot textarea{border-radius:5px; border:1px solid #ccc; 
+	margin-bottom:5px; padding-left:10px; font-family:"verdana"; font-size:9px; margin-bottom:10px;
+	width:270px; height:14em;
+	}
+#contents .contact h3{margin-bottom:15px;}
+
+#contents .newsUpdate{position:relative;}
+#contents .newsUpdate .Update1{margin-top:10px; width:100%; height:60px; border-bottom:1px dashed #ccc; padding-bottom:10px;}
+#contents .newsUpdate .Update1 .upd1{width:25%; float:left; }
+#contents .newsUpdate .Update1 p{font-size:11px; width:70%; padding:0; margin:0; float:left; }
+
+#contents .newsUpdate .Update2{margin-top:10px; width:100%; height:60px; border-bottom:1px dashed #ccc; padding-bottom:10px;}
+#contents .newsUpdate .Update2 .upd2{width:25%; float:left; }
+#contents .newsUpdate .Update2 p{font-size:11px; width:70%; padding:0; margin:0; float:left; }
+
+#contents .newsUpdate .Update3{margin-top:10px; width:100%; height:60px; border-bottom:1px dashed #ccc; padding-bottom:10px;}
+#contents .newsUpdate .Update3 .upd3{width:25%; float:left; }
+#contents .newsUpdate .Update3 p{font-size:0.688em; width:70%; padding:0; margin:0; float:left; }
+
+#contents .newsUpdate .bluebutton{clear:both; position:absolute; bottom:40px;}
+
+/* footer */
+#footer{height:140px; background-color:#333333; border-top:5px solid #4c4c4c;}
+#footer .footerInner{width:950px; margin:0 auto; padding-top:10px;}
+#footer .footerInner .footInfo{width:310px;float:left; font-family:"Myriad Pro"; font-size:11px; color:#929292;
+line-height:20px;}
+#footer .footerInner .footInfo a{color:#929292;}
+#footer .footerInner .footInfo a:hover{text-decoration:underline}
+#footer .footerInner .copyright{float:right;font-family:"Myriad Pro"; font-size:11px; color:#929292;
+line-height:20px;}

@@ -227,6 +227,6 @@ span.copyright{display: block;margin-top:5px}
 .main_rolling .bx-wrapper .bx-pager {display:inline-block;vertical-align:middle }
 .main_rolling .bx-pager-item {float:left}
 .main_rolling .bx-pager-link{background: url(../images/main_paging.png) no-repeat;display: inline-block;background-position: -43px -3px;width:14px;height:14px;vertical-align:middle;margin-right:7px;text-align:center;font-size:0;text-indent:-999px}
-.main_rolling .bx-pager-link .active{background-position: 0 -3px; width:34px;height:14px}
+.main_rolling .bx-pager-link.active{background-position: 0 -3px; width:34px;height:14px}
 .main_rolling .main_roll_btn ul li.play_btn{margin-right:0}
 .main_rolling .bx-controls-auto{display:inline-block;background: url(../images/main_paging.png) no-repeat;width:21px;height:21px; background-position: -67px 0}

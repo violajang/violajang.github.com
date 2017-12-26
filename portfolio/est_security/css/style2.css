@@ -194,7 +194,7 @@ box-sizing: border-box;width:170px}
 .cont4 a.owl-prev{background-position:0 0;left:0}
 .cont4 a.owl-next{background-position:9px 0;right:0}*/
 
-.cont .owl-pagination{display:none}
+.cont4 .owl-pagination{display:none}
 .cont4 .owl-theme .owl-controls .owl-buttons{position: absolute;top:82px;background:url(../img/s_nav_btn.png);
 	width:9px;height:13px;font-size:0;overflow: hidden}
 

@@ -189,9 +189,17 @@ margin-right:6px;display: inline-block;vertical-align: middle}
 .cont4 .est-c-logo{overflow: hidden;height:57px;margin:30px auto; padding:0 30px}
 .cont4 .est-c-logo div.item{border:1px solid #ececec;float:left;background:#fff;margin:5px;height:47px;
 box-sizing: border-box;width:170px}
-.cont4 a.ct4-arrow{position: absolute;top:82px;background:url(../img/s_nav_btn.png);display: block;width:9px; height:13px;font-size:0;overflow: hidden}
-.cont4 a.prev{background-position:0 0;left:0}
-.cont4 a.next{background-position:9px 0;right:0}
+/*.cont4 a.ct4-arrow{position: absolute;top:82px;background:url(../img/s_nav_btn.png);display: block;width:9px;
+	height:13px;font-size:0;overflow: hidden}
+.cont4 a.owl-prev{background-position:0 0;left:0}
+.cont4 a.owl-next{background-position:9px 0;right:0}*/
+
+.cont4 .owl-buttons div{position: absolute;top:82px;background:url(../img/s_nav_btn.png);display: block;width:9px;
+	height:13px;font-size:0;overflow: hidden}
+
+.cont4 .owl-buttons .prev{background-position:0 0;left:0}
+.cont4 .owl-buttons .next{background-position:9px 0;right:0}
+
 
 /*mark*/
 .mark{text-align:center;background: #f0f0f0}

@@ -33,9 +33,9 @@ const counter = () => {
     content();
   }
 
-  plusCount.addEventListener('click', increment);
-  minusCount.addEventListener('click', decrement);
-  resetCount.addEventListener('click', resetNum);
+  plusCount.addEventListener('click', increment, false);
+  minusCount.addEventListener('click', decrement, false);
+  resetCount.addEventListener('click', resetNum, false);
 }
 
 counter();

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <script>    
+
+      function lottoNubmer() {
+        const lotto = [];
+        const count = 6;
+
+        for (lottoNum = 0; lottoNum < count; lottoNum++) {
+          lotto[lottoNum] = Math.floor(Math.random() * 45) + 1;
+        }
+
+        for (searchNum = 0; searchNum < lottoNum; searchNum++) {
+          if (searchNum[lottoNum] == searchNum[lottoNum]) {
+            lottoNum--;
+            break;
+          }
+        }
+      }
+      ㄴ
+      lottoNubmer();
+
+      function buyLottos(cost) {
+        const times = cost / 1000;
+        console.log(times);
+
+
+      };
+
+    </script>
+  </body>
+
+</html>

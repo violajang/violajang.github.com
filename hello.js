@@ -5,7 +5,7 @@ var person = (function person(){
         name : '보라',
         eat : functon(food){
         console.log(food + '를 먹는다');
-        위.push(food);
-    };
+        위.push(food),
+    }
 }
 }());

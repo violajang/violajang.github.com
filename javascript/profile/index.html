@@ -12,21 +12,50 @@
   <body>
     <section class="profile">
       <article class="info-area">
-        <div class="photo-area">
-          <img src="asset/images/bora1.jpg" alt="장보라 프로필 사진">
-        </div>
+        <div class="photo-area"></div>
         <div class="detail-info">
           <ul>
-            <li>장보라</li>
-            <li>MarkUp Developer</li>
-            <li>1994. 02. 26</li>
-            <li>with
-              <a href="https://www.wemakescore.com" target="_blank">We Make Score</a>
+            <li>
+              <input class="github-id" name="github-id" placeholder="아무말이나 입력해주세요!" autofocus="">
+            </li>
+            <li class="name">
+              <span></span>
+            </li>
+            <li class="githubURL">
+              <a href="#"></a>
             </li>
           </ul>
         </div>
       </article>
     </section>
+    <script src="asset/js/profile.js"></script>
   </body>
+
+  <!--script>
+fetch('https://api.github.com/users/jyansol')
+  .then((data) => data.json())
+  .then((data) => (githubInfo = data));
+
+window.onload = function() {
+  console.log(githubInfo);
+  $NAME.textContent = githubInfo.login;
+  $GITHUBINFO.innerHTML = `<a href="${githubInfo.html_url}" target="_blank">${githubInfo.html_url}</a>`;
+  $PROFILE_PHOTO.innerHTML = `<img src="${githubInfo.avatar_url}" />`;
+
+  const addValue = function(e) {
+    //keycode 13은 'enter','return' key
+    if (e.keyCode !== 13) return;
+    const text = e.target.value;
+
+    $NAME.textContent = text;
+    $INPUTTEXT.value = '';
+  };
+
+  $INPUTTEXT.addEventListener('keypress', addValue);
+};
+
+
+</script-->
+
 
 </html>

@@ -21,6 +21,6 @@ window.onload = function() {
     $PROFILE_PHOTO.innerHTML = `<img src="${githubInfo.avatar_url}" />`;
   };
 
-  $INPUTTEXT.addEventListener('change', getInfo);
+  $INPUTTEXT.addEventListener('keyup', getInfo);
   $INPUTTEXT.addEventListener('keypress', addValue);
 };
